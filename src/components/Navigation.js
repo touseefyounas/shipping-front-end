@@ -1,5 +1,7 @@
 import TopMenu from "./TopMenu";
 import SideBar from "./SideBar";
+import { Outlet  } from "react-router-dom";
+
 const Navigation = () => {
     return (
         <>
@@ -8,8 +10,11 @@ const Navigation = () => {
                 <TopMenu />
             </header>
             <aside className='col-span-12 md:col-span-2 row-start-2 hidden md:block'>
-            <SideBar />
+                <SideBar />
             </aside>
+            <div className='col-span-12 md:col-span-10 row-start-2 h-screen'>
+                <Outlet/>
+            </div>
         </div>
         </>
     );

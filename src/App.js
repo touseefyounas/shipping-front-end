@@ -1,12 +1,12 @@
 import { RouterProvider, createBrowserRouter, createRoutesFromElements, Route } from 'react-router-dom';
-import Root from "./Root";
+import Dashboard from './pages/Dashboard';
+import Navigation from './components/Navigation';
 
 const App = () => {
     const appRouter = createBrowserRouter(createRoutesFromElements(
-        <Route path='/' element={<Root/>}>
-            <Route/>
-
-        </Route>
+            <Route path='/' element={<Navigation/>}>
+                <Route index element={<Dashboard />} />
+            </Route>
     ))
 
     return (
