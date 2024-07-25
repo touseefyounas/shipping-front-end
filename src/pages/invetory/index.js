@@ -5,7 +5,7 @@ const Inventory = () => {
     return (
         <div >
             <div >
-             <Datatable/>
+             <Datatable />
             </div>
         </div>
     );
