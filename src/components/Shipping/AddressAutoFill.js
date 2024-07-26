@@ -4,7 +4,7 @@ const AddressForm = () => {
     const accessToken = process.env.REACT_APP_MAPBOX_TOKEN;
 
     return (
-        <form className='rounded-lg m-4 col-span-1 md:col-start-1 lg:col-start-1 md:col-span-8 lg:col-span-6 py-4 px-6 border'>
+        <form className='rounded-lg m-4 py-4 px-6 border'>
         <label><h1 className='pb-2 font-medium'>Contact Information</h1></label>
         <div className='mb-5'>
         <label className='block m-1 text-sm font-medium text-gray-900 dark:text-white' htmlFor='name'>Name *</label>
@@ -23,6 +23,7 @@ const AddressForm = () => {
         <input className="block w-full p-2.5 text-sm bg-gray-50 rounded-md border border-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-white" type="text" name="phone"/>
         </div>
         <label><h1 className='pb-2 font-medium'>Address</h1></label>
+        
         <AddressAutofill accessToken={accessToken}>
         <div className='mb-5'>
         <label className='block m-1 text-sm font-medium text-gray-900 dark:text-white' htmlFor='address-1'>Address 1</label>

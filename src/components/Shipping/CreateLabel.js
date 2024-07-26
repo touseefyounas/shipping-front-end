@@ -14,7 +14,7 @@ const CreateLabel = () =>{
             <button className="text-sm font-normal rounded-sm hover:shadow-xl bg-gray-800 text-white py-2 px-4">Next<span className="hidden md:inline">: Order Details</span></button>
             </div>
         </div>
-        <Outlet/> 
+            <Outlet/> 
         </div>
     )
 }
