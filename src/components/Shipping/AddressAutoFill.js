@@ -41,6 +41,13 @@ const AddressForm = () => {
         <label className='block m-1 text-sm font-medium text-gray-900 dark:text-white' htmlFor='state'>State/Province</label>
         <input className="block w-full p-2.5 text-sm bg-gray-50 rounded-md border border-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-white" type="text" name="state" autocomplete="address-level1" required/>
         </div>
+        
+        </div>
+        <div className='flex md:flex-wrap flex-col md:flex-row md:space-x-4'>
+        <div className='mb-5 flex-1'>
+        <label className='block m-1 text-sm font-medium text-gray-900 dark:text-white' htmlFor='country'>Country</label>
+        <input className="block w-full p-2.5 text-sm bg-gray-50 rounded-md border border-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-white" type="text" name="country" autocomplete="country-name" required/>
+        </div>
         <div className='mb-5 flex-1'>
         <label className='block m-1 text-sm font-medium text-gray-900 dark:text-white' htmlFor='zip'>Postal/Zip Code</label>
         <input className="block w-full p-2.5 text-sm bg-gray-50 rounded-md border border-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-white" type="text" name="zip" autocomplete="postal-code" required/>
