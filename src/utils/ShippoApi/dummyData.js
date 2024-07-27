@@ -1,4 +1,4 @@
-const Inventory = [
+export const inventory = [
     {
       "SKU": "KB-001",
       "Name": "Mechanical Keyboard",
@@ -121,5 +121,13 @@ const Inventory = [
     }
   ]
 
-
-  export default Inventory;
+export const orders = [
+    {
+      'orderId': 'ORD12345',
+      'orderDate': '2024-07-25',
+      'totalAmount': 129.99,
+      'status': 'Shipped',
+      'shippingAddress': 'John Doe, 253 International Avenue, LaSalle, ON, N9J 1V1, Canada',
+    }
+  ]
+  

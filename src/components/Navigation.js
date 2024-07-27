@@ -12,7 +12,7 @@ const Navigation = () => {
             <aside className='col-span-12 md:col-start-1 md:col-span-2 row-start-1 row-span-11 hidden md:block'>
                 <SideBar />
             </aside>
-            <div className='bg-gray-500 col-span-12 md:col-start-3 md:col-span-10 row-start-2 row-span-11 overflow-y-scroll max-h-dvh'>
+            <div className='bg-gray-100 col-span-12 md:col-start-3 md:col-span-10 row-start-2 row-span-11 overflow-y-scroll max-h-dvh'>
                 <Outlet/>
             </div>
         </div>

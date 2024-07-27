@@ -1,11 +1,21 @@
 import getRates from "../../utils/ShippoApi/ShippoApi";
 import { useState } from "react";
 import { Calendar } from "primereact/calendar";
-
-const Rates = () => {
+import { stateCodeMap, countryCodeMap } from "../../utils/ShippoApi/AddressCodes";
+const Rates = ({address, dimensions}) => {
 
     const [rates, setRates] = useState([]);
     const [date, setDate ] = useState('');
+    
+    const parcelAddress = {
+        'name': address['name'],
+        'street1': address['street1 address-search'],
+        'city': address['city'],
+        'state': stateCodeMap[address['state']] || address['state'],
+        'zip': address['zip'].replace(/\s+/g, ''),
+        'country': countryCodeMap[address['country']]
+    };
+    
 
     const body = JSON.stringify({
         "address_from": {
@@ -16,22 +26,8 @@ const Rates = () => {
             "zip": "N9J1V1",
             "country": "CA"
         },
-        "address_to": {
-            "name": "Mrs. Hippo",
-            "street1": "59 Kingston Road",
-            "city": "Toronto",
-            "state": "ON",
-            "zip": "M4L1S5",
-            "country": "CA"
-        },
-        "parcels": [{
-            "length": "5",
-            "width": "5",
-            "height": "5",
-            "distance_unit": "in",
-            "weight": "2",
-            "mass_unit": "lb"
-        }],
+        "address_to": parcelAddress,
+        "parcels": [dimensions],
         "async": false
     })
 
