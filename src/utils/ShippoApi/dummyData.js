@@ -123,11 +123,39 @@ export const inventory = [
 
 export const orders = [
     {
-      'orderId': 'ORD12345',
-      'orderDate': '2024-07-25',
-      'totalAmount': 129.99,
-      'status': 'Shipped',
-      'shippingAddress': 'John Doe, 253 International Avenue, LaSalle, ON, N9J 1V1, Canada',
-    }
-  ]
+        orderId: 'ORD001',
+        orderDate: '2024-07-01',
+        totalAmount: 149.99,
+        status: 'Shipped',
+        shippingAddress: 'John Doe, 253 International Avenue, LaSalle, ON, N9J 1V1, Canada',
+    },
+    {
+        orderId: 'ORD002',
+        orderDate: '2024-07-05',
+        totalAmount: 299.50,
+        status: 'Processing',
+        shippingAddress: 'Jane Smith, 123 Maple Street, Toronto, ON, M4B 1B4, Canada',
+    },
+    {
+        orderId: 'ORD003',
+        orderDate: '2024-07-10',
+        totalAmount: 75.00,
+        status: 'Delivered',
+        shippingAddress: 'Bob Johnson, 789 Oak Avenue, Ottawa, ON, K1P 5G4, Canada',
+    },
+    {
+        orderId: 'ORD004',
+        orderDate: '2024-07-12',
+        totalAmount: 199.99,
+        status: 'Cancelled',
+        shippingAddress: 'Alice Williams, 456 Elm Drive, Vancouver, BC, V5K 0A1, Canada',
+    },
+    {
+        orderId: 'ORD005',
+        orderDate: '2024-07-15',
+        totalAmount: 89.75,
+        status: 'Shipped',
+        shippingAddress: 'Charlie Brown, 321 Pine Street, Montreal, QC, H3G 1B6, Canada',
+    },
+];
   
