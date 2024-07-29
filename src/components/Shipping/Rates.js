@@ -20,11 +20,11 @@ const Rates = ({address, dimensions}) => {
     const body = JSON.stringify({
         "address_from": {
             "name": "First Test",
-            "street1": "253 International Avenue",
-            "city": "LaSalle",
-            "state": "ON",
-            "zip": "N9J1V1",
-            "country": "CA"
+            "street1": "44 Collyer Avenue",
+            "city": "New City",
+            "state": "NY",
+            "zip": "10956",
+            "country": "US"
         },
         "address_to": parcelAddress,
         "parcels": [dimensions],

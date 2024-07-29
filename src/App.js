@@ -6,6 +6,8 @@ import Orders from './pages/orders';
 import Shipments from './pages/Shipments';
 import CreateLabel from './components/Shipping/CreateLabel';
 import ShippingAddress from './components/Shipping/ShippingAddress';
+import Login from './components/login';
+import SignUp from './components/signup';
 
 const App = () => {
     const appRouter = createBrowserRouter(createRoutesFromElements(
@@ -18,6 +20,10 @@ const App = () => {
             </Route>
             <Route path='orders/create' element={<CreateLabel/>}>
                 <Route index element={<ShippingAddress/>}/>
+            </Route>
+            <Route path='/login' element={<Login/>}>
+            </Route>
+            <Route path='/signup' element={<SignUp/>}>
             </Route>
         </>
     ))
