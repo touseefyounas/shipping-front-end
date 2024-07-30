@@ -40,15 +40,15 @@ const Rates = ({address, dimensions}) => {
 
     return (
         <div className="flex flex-col items-center gap-3 m-3">
-            <button onClick={handleRateClick} className="text-sm font-normal rounded-sm xl:w-1/4 hover:shadow-xl hover:bg-gray-950 bg-gray-800 text-white py-2 px-4">Get Rates</button>
-            <p className='text-sm self-start'>Shipment Date</p>
+            <button onClick={handleRateClick} className="text-sm font-normal rounded-sm xl:w-1/4 hover:shadow-xl bg-secondary text-text hover:bg-primary hover:text-white  py-2 px-4">Get Rates</button>
+            <p className='text-sm text-text self-start'>Shipment Date</p>
             <Calendar value={date} onChange={(e) => setDate(e.value)} showButtonBar className='border py-2 px-4 hover:shadow-xl w-full mb-1'/>
             {rates.map(rate=>{
                 return(
-                    <div className='flex justify-between border hover:shadow-xl hover:bg-blue-300 p-4 rounded-lg w-full'>
+                    <div className='flex justify-between border hover:text-white hover:shadow-xl hover:bg-primary p-4 rounded-lg w-full'>
                         <div className='flex  items-center'>
                         <img src={rate.provider_image} alt='logo'/>
-                        <p className='font-medium px-2'>{rate.serviceLevel}</p>
+                        <p className='font-medium text-text px-2'>{rate.serviceLevel}</p>
                         </div>
                         <div>
                         <p className='font-semibold'>{rate.amount} {rate.currency}</p> 

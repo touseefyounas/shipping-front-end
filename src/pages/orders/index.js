@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 
 const Orders = () => {
     return (
-        <div className=" min-h-full bg-accent p-4">
+        <div className=" min-h-full bg-background p-4">
             <div className="flex flex-col p-2 bg-white rounded-lg shadow-lg">
             <div className="flex flex-row justify-between border-b bg-white">
                 <h1 className="text-2xl font-bold m-4">Orders</h1>

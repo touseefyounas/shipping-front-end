@@ -5,7 +5,7 @@ import { Button } from "primereact/button";
 
 const Inventory = () => {
     return (
-        <div className="min-h-full bg-accent p-4">
+        <div className="min-h-full bg-background p-4">
         <div className="flex flex-col p-2 bg-white rounded-lg shadow-lg">
             <div className="flex flex-row justify-between">
                 <h1 className="text-2xl font-bold m-4">Inventory</h1>
