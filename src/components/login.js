@@ -9,6 +9,10 @@ const Login = () => {
 
     const navigate =useNavigate();
 
+    // onAuthStateChanged(auth, (currentUser)=> {
+    //     setUser(currentUser);
+    // })
+
     const handleLogin = async (e) => {
 
         e.preventDefault();
